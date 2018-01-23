@@ -59,8 +59,8 @@ public class Main extends javax.swing.JFrame {
                 1,
                 0,
                 2,
-                0,
-                0,
+                -1,
+                2,
                 0,
                 0};
     int[] pop1 = {0,
@@ -89,9 +89,9 @@ public class Main extends javax.swing.JFrame {
                 1,
                 0,
                 1,
-                0,
-                0,
-                0,
+                -1,
+                1,
+                -1,
                 0};
     int[] army1 = {0,
                 0,
@@ -121,7 +121,7 @@ public class Main extends javax.swing.JFrame {
                 -1,
                 0,
                 0,
-                0,
+                1,
                 0};
     int[] mon1 = {0,
                 -1,
@@ -151,7 +151,7 @@ public class Main extends javax.swing.JFrame {
                 -3,
                 0,
                 0,
-                0,
+                1,
                 0};
     
     //Option 2
@@ -182,7 +182,7 @@ public class Main extends javax.swing.JFrame {
                 0,
                 -3,
                 0,
-                0,
+                -2,
                 0,
                 0};
     int[] pop2 = {0,
@@ -213,7 +213,7 @@ public class Main extends javax.swing.JFrame {
                 0,
                 0,
                 0,
-                0,
+                1,
                 0};
     int[] army2 = {0,
                 0,
@@ -243,7 +243,7 @@ public class Main extends javax.swing.JFrame {
                 0,
                 0,
                 0,
-                0,
+                -1,
                 0};
     int[] mon2 = {0,
                 0,
@@ -271,9 +271,9 @@ public class Main extends javax.swing.JFrame {
                 0,
                 0,
                 2,
-                0,
-                0,
-                0,
+                -2,
+                3,
+                1,
                 0};
     
     //Conversations
@@ -283,7 +283,7 @@ public class Main extends javax.swing.JFrame {
                     "My Queen, the church believes there is a witch amongst your subjects",
                     "Your Majesty! There is a plague sweeping our Kingdom! Should we help the sick or dispose of them?",
                     "My Queen, our scout has spotted an army heading to attack us! Should we fight back or try to negotiate?",
-                    "My Queen, the kingdom is running out of food!! Should buy more from neighbouring villages and kingdoms or let the peasants starve?",
+                    "My Queen, the kingdom is running out of food! Should we buy more from neighbouring villages and kingdoms or let the peasants starve?",
                     "A group of skilled hunters are looking to be hired by you, My Queen, to bring good quality food to our kingdom!",
                     "We believe there are a group of witches that are hiding in our Kingdom. My Queen, shall we burn them at the stake or use them for their power?",
                     "A general in your army has been cheating on his wife!",
@@ -303,9 +303,9 @@ public class Main extends javax.swing.JFrame {
                     "People have mentioned that they find some of your language offensive.",
                     "The army is so costly. Why not decrease patrols to save money?",
                     "The church is planning the festival of the Gods is requesting money and land from you. What say you?",
-                    " ",
-                    " ",
-                    " ",
+                    "A neighbouring kingdom has sent an army to our castle demanding gold in exchange for peace. What shall we do?",
+                    "A gigantic rock has crashed near our castle, and the church is claiming that it's a sign from God that we must change and beg for mercy.",
+                    "Your Highness, the farmers are having trouble keeping some of the more dangerous animals out of their fields, how can we help them?",
                     "Ending"};
     String[] ans1 = {"Got it",
                     "Increase funding for farmers.",
@@ -333,9 +333,9 @@ public class Main extends javax.swing.JFrame {
                     "Oh. Sorry, I'll try to be less vulgar.",
                     "That's not a bad idea...",
                     "Of course, inform the church that the money is on the way.",
-                    " ",
-                    " ",
-                    " ",
+                    "THE ONLY OPTION IS WAR!!!",
+                    "Begin construction of a temple around the rock.",
+                    "Give our farmers basic training in hunting.",
                     "Ending"};
     String[] ans2 = {"Cool",
                     "Who cares?",
@@ -363,9 +363,9 @@ public class Main extends javax.swing.JFrame {
                     "What the hell do those pieces of garbage know?",
                     "No. The safety of the kingdom is my primary concern.",
                     "Their festival, their problem.",
-                    " ",
-                    " ",
-                    " ",
+                    "We will see to their requests for now.",
+                    "We should mine it for it's minerals.",
+                    "Send in some soldiers to keep watch and patrol the area.",
                     "Ending"};
     
     
@@ -797,7 +797,7 @@ public class Main extends javax.swing.JFrame {
     private void img1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_img1MouseClicked
         // TODO add your handling code here:
         
-        System.out.println("Left");
+        //System.out.println("Left");
         
         //Assignment      
         assignLeft();
@@ -815,7 +815,7 @@ public class Main extends javax.swing.JFrame {
     private void img2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_img2MouseClicked
         // TODO add your handling code here:
         
-        System.out.println("Right");
+        //System.out.println("Right");
         
         //Assignment
         assignRight();
@@ -984,6 +984,27 @@ public class Main extends javax.swing.JFrame {
 
     private void ToMenuLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ToMenuLabelMouseClicked
         // TODO add your handling code here:
+        
+        if (chur >= 10 || pop >= 10 || army >= 10 || mon >= 10 || chur <= 0 || 
+                pop <= 0 || army <= 0 || mon <= 0 || cardNum >= 30){
+            
+            NGLabel.setText("New Game");
+            chur = 5;
+            pop = 5;
+            army = 5;
+            mon = 5;
+            cardNum = 0;
+            
+            //Set texts to defaults
+            text.setText(convertTM(toYou[cardNum]));
+            op1.setText(convertTM(ans1[cardNum]));
+            op2.setText(convertTM(ans2[cardNum]));
+            
+        } else {
+            
+            
+        }
+        
         
         //Disable elements
         img1.setVisible(false);
@@ -1188,11 +1209,12 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("The church, believing you to be a saint, has you"
+            text.setText(convertTM("The church, believing you to be a saint, has you"
                     + " fast until you hear the voice of god. You do not. You"
-                    + " starve");
+                    + " starve."));
             op1.setText("-");
             op2.setText("-");
+            
             
         } else if (pop >= 10) {
             // Fans storm castle and you are trampled
@@ -1201,11 +1223,13 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("The public, desperate to see their beloved queen,"
+            text.setText(convertTM("The public, desperate to see their beloved queen,"
                     + " storm into the castle. "
-                    + "You are trampled amidst the confusion and excitement.");
+                    + "You are trampled amidst the confusion and excitement."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if (army >= 10) {
             // Army grows restless, you are overthrown and beheaded
@@ -1214,11 +1238,12 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("The army, now too large for you to handle,"
+            text.setText(convertTM("The army, now too large for you to handle,"
                     + " decides you are unfit as ruler and starts an uprising. "
-                    + "You are overthrown and beheaded.");
+                    + "You are overthrown and beheaded."));
             op1.setText("-");
             op2.setText("-");
+            
             
             
         } else if (mon >= 10) {
@@ -1228,11 +1253,13 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("Attracted by your great wealth, an enemy nation"
+            text.setText(convertTM("Attracted by your great wealth, an enemy nation"
                     + " launches a frontal assault on your kingdom. The entire"
-                    + " castle is burned to the ground with you in it.");
+                    + " castle is burned to the ground with you in it."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if (chur <= 0) {
             // You are deemed a heretic, and burned at the stake
@@ -1241,10 +1268,12 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("The church deems you a heretic, and burns you at the"
-                    + " stake for your blasphemous acts.");
+            text.setText(convertTM("The church deems you a heretic, and burns you at the"
+                    + " stake for your blasphemous acts."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if (pop <= 0) {
             // People hate you, you are dragged out of your castle and stoned
@@ -1253,11 +1282,13 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("The public, infuriated by your actions, storm your"
+            text.setText(convertTM("The public, infuriated by your actions, storm your"
                     + " castle with fire in their eyes. You are dragged out"
-                    + " onto the streets and stoned.");
+                    + " onto the streets and stoned."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if(army <= 0) {
             // Other nation takes advantage of weakness, you are pillaged
@@ -1266,11 +1297,13 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("An enemy kingdom, taking advantage of your"
+            text.setText(convertTM("An enemy kingdom, taking advantage of your"
                     + " non-existent army, pillages your lands. Your kingdom"
-                    + " burns before your eyes.");
+                    + " burns before your eyes."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if (mon <= 0) {
             // Starving and cold, your subjects die off one by one
@@ -1279,10 +1312,12 @@ public class Main extends javax.swing.JFrame {
             stat3.setText("-");
             stat4.setText("-");
             
-            text.setText("Starving and cold, your subjects die off one by"
-                    + " one until you yourself succumb to famine.");
+            text.setText(convertTM("Starving and cold, your subjects die off one by"
+                    + " one until you yourself succumb to famine."));
             op1.setText("-");
             op2.setText("-");
+            
+            
             
         } else if (cardNum >= 30) {
             //You win! Having reached the end of your life you die a good ruler
