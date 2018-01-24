@@ -33,251 +33,27 @@ public class Main extends javax.swing.JFrame {
     
     //Arrays
     //Option 1
-    int[] chur1 = {0,
-                0,
-                2,
-                1,
-                2,
-                -1,
-                2,
-                0,
-                2,
-                1,
-                0,
-                0,
-                0,
-                0,
-                -2,
-                3,
-                0,
-                0,
-                0,
-                0,
-                0,
-                2,
-                0,
-                1,
-                0,
-                2,
-                -1,
-                2,
-                0,
-                0};
-    int[] pop1 = {0,
-                1,
-                0,
-                -1,
-                1,
-                0,
-                2,
-                1,
-                1,
-                0,
-                2,
-                3,
-                1,
-                2,
-                1,
-                0,
-                1,
-                1,
-                1,
-                -1,
-                0,
-                0,
-                -1,
-                1,
-                0,
-                1,
-                -1,
-                1,
-                -1,
-                0};
-    int[] army1 = {0,
-                0,
-                -1,
-                0,
-                0,
-                -2,
-                2,
-                2,
-                0,
-                -2,
-                1,
-                -1,
-                -10,
-                1,
-                0,
-                0,
-                0,
-                -2,
-                -1,
-                -1,
-                -1,
-                0,
-                0,
-                0,
-                -2,
-                -1,
-                0,
-                0,
-                1,
-                0};
-    int[] mon1 = {0,
-                -1,
-                0,
-                0,
-                -1,
-                0,
-                -2,
-                -2,
-                0,
-                0,
-                -2,
-                -1,
-                0,
-                0,
-                0,
-                -2,
-                0,
-                0,
-                0,
-                0,
-                0,
-                -1,
-                0,
-                0,
-                3,
-                -3,
-                0,
-                0,
-                1,
-                0};
+    int[] chur1 = {0,0,2,1,2,-1,2,0,2,1,0,0,0,0,-2,3,0,0,0,0,0,2,0,1,0,2,-1,2,
+                    0,0};
+    int[] pop1 = {0,1,0,-1,1,0,2,1,1,0,2,3,1,2,1,0,1,1,1,-1,0,0,-1,1,0,1,-1,1,
+                    -1,0};
+    int[] army1 = {0,0,-1,0,0,-2,2,2,0,-2,1,-1,-10,1,0,0,0,-2,-1,-1,-1,0,0,0,
+                    -2,-1,0,0,1,0};
+    int[] mon1 = {0,-1,0,0,-1,0,-2,-2,0,0,-2,-1,0,0,0,-2,0,0,0,0,0,-1,0,0,3,-3,
+                    0,0,1,0};
     
     //Option 2
-    int[] chur2 = {0,
-                -1,
-                -3,
-                -1,
-                -1,
-                1,
-                -1,
-                0,
-                -1,
-                -1,
-                0,
-                0,
-                0,
-                -1,
-                0,
-                -3,
-                0,
-                0,
-                0,
-                0,
-                0,
-                -1,
-                0,
-                -1,
-                0,
-                -3,
-                0,
-                -2,
-                0,
-                0};
-    int[] pop2 = {0,
-                -1,
-                0,
-                1,
-                -2,
-                1,
-                -2,
-                -1,
-                -2,
-                0,
-                -1,
-                -3,
-                -1,
-                -1,
-                0,
-                0,
-                -1,
-                -1,
-                -1,
-                2,
-                1,
-                0,
-                0,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                1,
-                0};
-    int[] army2 = {0,
-                0,
-                2,
-                0,
-                0,
-                0,
-                -1,
-                -1,
-                0,
-                0,
-                -1,
-                1,
-                0,
-                1,
-                0,
-                0,
-                0,
-                1,
-                0,
-                1,
-                1,
-                0,
-                -1,
-                0,
-                0,
-                0,
-                0,
-                0,
-                -1,
-                0};
-    int[] mon2 = {0,
-                0,
-                2,
-                0,
-                1,
-                -1,
-                0,
-                0,
-                1,
-                0,
-                1,
-                2,
-                0,
-                0,
-                -1,
-                1,
-                0,
-                0,
-                0,
-                -2,
-                -1,
-                1,
-                0,
-                0,
-                0,
-                2,
-                -2,
-                3,
-                1,
-                0};
+    int[] chur2 = {0,-1,-3,-1,-1,1,-1,0,-1,-1,0,0,0,-1,0,-3,0,0,0,0,0,-1,0,-1,
+                    0,-3,0,-2,0,0};
+    int[] pop2 = {0,-1,0,1,-2,1,-2,-1,-2,0,-1,-3,-1,-1,0,0,-1,-1,-1,2,1,0,0,-1,
+                    0,0,0,0,1,0};
+    int[] army2 = {0,0,2,0,0,0,-1,-1,0,0,-1,1,0,1,0,0,0,1,0,1,1,0,-1,0,0,0,0,0,
+                    -1,0};
+    int[] mon2 = {0,0,2,0,1,-1,0,0,1,0,1,2,0,0,-1,1,0,0,0,-2,-1,1,0,0,0,2,-2,3,
+                    1,0};
     
     //Conversations
-    String[] toYou = {"Intro",
+    String[] toYou = {"Your story takes place during the dark ages, where you have just become Queen.",
                     "My Queen, the peasants are complaining about a food shortage."
                     , "My Queen, we wish to mine a nearby mountain, but the church says it is holy ground.",
                     "My Queen, the church believes there is a witch amongst your subjects",
@@ -404,6 +180,14 @@ public class Main extends javax.swing.JFrame {
         stat2Img = new javax.swing.JLabel();
         stat3Img = new javax.swing.JLabel();
         stat4Img = new javax.swing.JLabel();
+        Ins8 = new javax.swing.JLabel();
+        Ins7 = new javax.swing.JLabel();
+        Ins6 = new javax.swing.JLabel();
+        Ins5 = new javax.swing.JLabel();
+        Ins4 = new javax.swing.JLabel();
+        Ins3 = new javax.swing.JLabel();
+        Ins2 = new javax.swing.JLabel();
+        Ins1 = new javax.swing.JLabel();
         text = new javax.swing.JLabel();
         op1 = new javax.swing.JLabel();
         img1 = new javax.swing.JLabel();
@@ -417,6 +201,10 @@ public class Main extends javax.swing.JFrame {
         l2 = new javax.swing.JLabel();
         l3 = new javax.swing.JLabel();
         l4 = new javax.swing.JLabel();
+        datImg1 = new javax.swing.JLabel();
+        datImg2 = new javax.swing.JLabel();
+        datImg3 = new javax.swing.JLabel();
+        datImg4 = new javax.swing.JLabel();
         datBox1 = new javax.swing.JLabel();
         datBox2 = new javax.swing.JLabel();
         datBox3 = new javax.swing.JLabel();
@@ -568,10 +356,58 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(stat4Img);
         stat4Img.setBounds(700, 30, 50, 80);
 
+        Ins8.setFont(new java.awt.Font("Plantagenet Cherokee", 0, 18)); // NOI18N
+        Ins8.setForeground(new java.awt.Color(156, 239, 255));
+        Ins8.setText("their problems.");
+        getContentPane().add(Ins8);
+        Ins8.setBounds(20, 270, 260, 40);
+
+        Ins7.setFont(new java.awt.Font("Plantagenet Cherokee", 0, 18)); // NOI18N
+        Ins7.setForeground(new java.awt.Color(156, 239, 255));
+        Ins7.setText("People will come to your with");
+        getContentPane().add(Ins7);
+        Ins7.setBounds(20, 250, 260, 40);
+
+        Ins6.setFont(new java.awt.Font("Plantagenet Cherokee", 0, 18)); // NOI18N
+        Ins6.setForeground(new java.awt.Color(156, 239, 255));
+        Ins6.setText("They must not reach 10 or 0");
+        getContentPane().add(Ins6);
+        Ins6.setBounds(20, 190, 260, 40);
+
+        Ins5.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins5.setForeground(new java.awt.Color(202, 239, 242));
+        Ins5.setText("and the wealth of your kingdom.");
+        getContentPane().add(Ins5);
+        Ins5.setBounds(20, 150, 240, 40);
+
+        Ins4.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins4.setForeground(new java.awt.Color(202, 239, 242));
+        Ins4.setText("The strength of your army,");
+        getContentPane().add(Ins4);
+        Ins4.setBounds(20, 120, 240, 40);
+
+        Ins3.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins3.setForeground(new java.awt.Color(202, 239, 242));
+        Ins3.setText("How much the people like you,");
+        getContentPane().add(Ins3);
+        Ins3.setBounds(20, 90, 240, 40);
+
+        Ins2.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins2.setForeground(new java.awt.Color(202, 239, 242));
+        Ins2.setText("Your relationship with the church,");
+        getContentPane().add(Ins2);
+        Ins2.setBounds(20, 60, 240, 40);
+
+        Ins1.setFont(new java.awt.Font("Plantagenet Cherokee", 0, 18)); // NOI18N
+        Ins1.setForeground(new java.awt.Color(156, 239, 255));
+        Ins1.setText("The four stats above represent...");
+        getContentPane().add(Ins1);
+        Ins1.setBounds(20, 20, 260, 40);
+
         text.setFont(new java.awt.Font("Pristina", 1, 24)); // NOI18N
         text.setForeground(new java.awt.Color(202, 239, 242));
         text.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        text.setText("Intro\n");
+        text.setText("Intro");
         text.setToolTipText("");
         getContentPane().add(text);
         text.setBounds(330, 150, 460, 100);
@@ -707,6 +543,26 @@ public class Main extends javax.swing.JFrame {
         getContentPane().add(l4);
         l4.setBounds(730, 500, 50, 40);
 
+        datImg1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        datImg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CrownIconSmall.png"))); // NOI18N
+        getContentPane().add(datImg1);
+        datImg1.setBounds(340, 180, 130, 90);
+
+        datImg2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        datImg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CrownIconSmall.png"))); // NOI18N
+        getContentPane().add(datImg2);
+        datImg2.setBounds(660, 180, 130, 90);
+
+        datImg3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        datImg3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CrownIconSmall.png"))); // NOI18N
+        getContentPane().add(datImg3);
+        datImg3.setBounds(340, 380, 130, 90);
+
+        datImg4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        datImg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CrownIconSmall.png"))); // NOI18N
+        getContentPane().add(datImg4);
+        datImg4.setBounds(660, 380, 130, 90);
+
         datBox1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         datBox1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/QueenDatBox.png"))); // NOI18N
         getContentPane().add(datBox1);
@@ -773,9 +629,9 @@ public class Main extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     
-    //Startup method
-    
-    
+    /**
+     * Shouldn't exist
+     */  
     private void op1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_op1KeyPressed
         // TODO add your handling code here:
 
@@ -793,7 +649,10 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_op1KeyPressed
 
     
-    
+    /**
+     * Pre: N/A
+     * Post: Calls the "assignLeft" and "checkAndContinue" methods
+     */
     private void img1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_img1MouseClicked
         // TODO add your handling code here:
         
@@ -811,7 +670,10 @@ public class Main extends javax.swing.JFrame {
     
     
     
-    
+    /**
+     * Pre: N/A
+     * Post: Calls the "assignRight" and "checkAndContinue" methods
+     */
     private void img2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_img2MouseClicked
         // TODO add your handling code here:
         
@@ -827,6 +689,12 @@ public class Main extends javax.swing.JFrame {
         
     }//GEN-LAST:event_img2MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Things that run when the game is launched. Sets all GUI elements
+     * besides the main menu's to be invisible, and checks to see if any save
+     * data exists
+     */
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
         
@@ -870,13 +738,29 @@ public class Main extends javax.swing.JFrame {
         datBox2.setVisible(false);
         datBox3.setVisible(false);
         datBox4.setVisible(false);
+        datImg1.setVisible(false);
+        datImg2.setVisible(false);
+        datImg3.setVisible(false);
+        datImg4.setVisible(false);
         
         //Check save slots
+        
+        checkSaveSlots();
+        
+        text.setText(convertTM(toYou[0]));
+        //"Your story takes place in the dark ages, where you have just become
+        //Queen. The four stats above represent your relationship with the church,
+        //how much your subjects like you, the strength of your army, and 
+        //the wealth of your kingdom."
         
         //System.out.println("Salad\n kills");
         
     }//GEN-LAST:event_formWindowActivated
 
+    /**
+     * Pre: N/A
+     * Post: Game closes. Pretty obvious if you ask me.
+     */
     private void ExitLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ExitLabelMouseClicked
         // TODO add your handling code here:
         
@@ -884,6 +768,10 @@ public class Main extends javax.swing.JFrame {
         
     }//GEN-LAST:event_ExitLabelMouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Disables menu GUI elements, and enables the data screen's
+     */
     private void DatLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DatLabelMouseClicked
         // TODO add your handling code here:
         
@@ -905,6 +793,18 @@ public class Main extends javax.swing.JFrame {
         datBox3.setVisible(true);
         datBox4.setVisible(true);
         
+        if (save1Dat == 1){
+            datImg1.setVisible(true);
+        }
+        if (save2Dat == 1){
+            datImg2.setVisible(true);
+        }
+        if (save3Dat == 1){
+            datImg3.setVisible(true);
+        }
+        if (save4Dat == 1){
+            datImg4.setVisible(true);
+        }
         //Disable other things
         logo.setVisible(false);
         TitleLabel.setVisible(false);
@@ -915,6 +815,10 @@ public class Main extends javax.swing.JFrame {
         
     }//GEN-LAST:event_DatLabelMouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Disables data GUI elements, and enables the main menu's
+     */
     private void DatBackLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_DatBackLabelMouseClicked
         // TODO add your handling code here:
         
@@ -942,9 +846,17 @@ public class Main extends javax.swing.JFrame {
         datBox2.setVisible(false);
         datBox3.setVisible(false);
         datBox4.setVisible(false);
+        datImg1.setVisible(false);
+        datImg2.setVisible(false);
+        datImg3.setVisible(false);
+        datImg4.setVisible(false);
         
     }//GEN-LAST:event_DatBackLabelMouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Disables menu GUI elements, and enables the game's
+     */
     private void NGLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NGLabelMouseClicked
         // TODO add your handling code here:
         
@@ -982,6 +894,10 @@ public class Main extends javax.swing.JFrame {
         
     }//GEN-LAST:event_NGLabelMouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Disables game GUI elements, and enables the main menu's
+     */
     private void ToMenuLabelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ToMenuLabelMouseClicked
         // TODO add your handling code here:
         
@@ -1038,38 +954,75 @@ public class Main extends javax.swing.JFrame {
     }//GEN-LAST:event_ToMenuLabelMouseClicked
 
     //SAVING
-    
+    /**
+     * Pre: N/A
+     * Post: Writes current values to corresponding file
+     */
     private void s1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s1MouseClicked
         // TODO add your handling code here:
         
         save.writeTest(chur, army, pop, mon, cardNum, "src\\data\\Slot1.txt");
         //change icon to "saved"
+        if (cardNum != 0){
+            save1Dat = 1;
+            datImg1.setVisible(true);
+        }
         
     }//GEN-LAST:event_s1MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Writes current values to corresponding file
+     */
     private void s2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s2MouseClicked
         // TODO add your handling code here:
         
         save.writeTest(chur, army, pop, mon, cardNum, "src\\data\\Slot2.txt");
         
+        if (cardNum != 0){
+            save2Dat = 1;
+            datImg2.setVisible(true);
+        }
+        
     }//GEN-LAST:event_s2MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Writes current values to corresponding file
+     */
     private void s3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s3MouseClicked
         // TODO add your handling code here:
         
         save.writeTest(chur, army, pop, mon, cardNum, "src\\data\\Slot3.txt");
         
+        if (cardNum != 0){
+            save3Dat = 1;
+            datImg3.setVisible(true);
+        }
+        
     }//GEN-LAST:event_s3MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Writes current values to corresponding file
+     */
     private void s4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_s4MouseClicked
         // TODO add your handling code here:
         
         save.writeTest(chur, army, pop, mon, cardNum, "src\\data\\Slot4.txt");
         
+        if (cardNum != 0){
+            save4Dat = 1;
+            datImg4.setVisible(true);
+        }
+        
     }//GEN-LAST:event_s4MouseClicked
 
     //LOADING
-    
+    /**
+     * Pre: N/A
+     * Post: Updates GUI and variables with new, loaded values
+     */
     private void l1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l1MouseClicked
         // TODO add your handling code here:
         
@@ -1088,12 +1041,16 @@ public class Main extends javax.swing.JFrame {
         stat2.setText(pop + "");
         stat3.setText(army + "");
         stat4.setText(mon + "");
-        text.setText(toYou[cardNum]);
-        op1.setText(ans1[cardNum]);
-        op2.setText(ans2[cardNum]);
+        text.setText(convertTM(toYou[cardNum]));
+        op1.setText(convertTM(ans1[cardNum]));
+        op2.setText(convertTM(ans2[cardNum]));
         
     }//GEN-LAST:event_l1MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Updates GUI and variables with new, loaded values
+     */
     private void l2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l2MouseClicked
         // TODO add your handling code here:
         
@@ -1111,12 +1068,16 @@ public class Main extends javax.swing.JFrame {
         stat2.setText(pop + "");
         stat3.setText(army + "");
         stat4.setText(mon + "");
-        text.setText(toYou[cardNum]);
-        op1.setText(ans1[cardNum]);
-        op2.setText(ans2[cardNum]);
+        text.setText(convertTM(toYou[cardNum]));
+        op1.setText(convertTM(ans1[cardNum]));
+        op2.setText(convertTM(ans2[cardNum]));
         
     }//GEN-LAST:event_l2MouseClicked
 
+    /**
+     * Pre: N/A
+     * Post: Updates GUI and variables with new, loaded values
+     */
     private void l3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l3MouseClicked
         // TODO add your handling code here:
         
@@ -1134,12 +1095,16 @@ public class Main extends javax.swing.JFrame {
         stat2.setText(pop + "");
         stat3.setText(army + "");
         stat4.setText(mon + "");
-        text.setText(toYou[cardNum]);
-        op1.setText(ans1[cardNum]);
-        op2.setText(ans2[cardNum]);
+        text.setText(convertTM(toYou[cardNum]));
+        op1.setText(convertTM(ans1[cardNum]));
+        op2.setText(convertTM(ans2[cardNum]));
         
     }//GEN-LAST:event_l3MouseClicked
-
+    
+    /**
+     * Pre: N/A
+     * Post: Updates GUI and variables with new, loaded values
+     */
     private void l4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_l4MouseClicked
         // TODO add your handling code here:
         
@@ -1157,15 +1122,18 @@ public class Main extends javax.swing.JFrame {
         stat2.setText(pop + "");
         stat3.setText(army + "");
         stat4.setText(mon + "");
-        text.setText(toYou[cardNum]);
-        op1.setText(ans1[cardNum]);
-        op2.setText(ans2[cardNum]);
+        text.setText(convertTM(toYou[cardNum]));
+        op1.setText(convertTM(ans1[cardNum]));
+        op2.setText(convertTM(ans2[cardNum]));
         
     }//GEN-LAST:event_l4MouseClicked
     
     
     
-    
+    /**
+     * Pre: N/A
+     * Post: Assigns the new values to the variables and updates GUI
+     */
     public void assignLeft(){
         
         //New values
@@ -1183,6 +1151,10 @@ public class Main extends javax.swing.JFrame {
         
     }
     
+    /**
+     * Pre: N/A
+     * Post: Assigns the new values to the variables and updates GUI
+     */
     public void assignRight(){
         
         //New values
@@ -1199,6 +1171,11 @@ public class Main extends javax.swing.JFrame {
         
     }
     
+    /**
+     * Pre: N/A
+     * Post: Will either end the game with the appropriate message, or call the
+     * "advance" method and continue play
+     */
     public void checkAndContinue(){
     
     //Different game enders
@@ -1321,7 +1298,9 @@ public class Main extends javax.swing.JFrame {
             
         } else if (cardNum >= 30) {
             //You win! Having reached the end of your life you die a good ruler
-            
+            text.setText(convertTM(toYou[30]));
+            op1.setText(convertTM(ans1[30]));
+            op2.setText(convertTM(ans2[30]));
             
         } else {
             //Advance
@@ -1332,8 +1311,36 @@ public class Main extends javax.swing.JFrame {
     
     
 }
+    /**
+     * Pre: N/A
+     * Post: Determines whether there is non-default data in any of the save 
+     * slots
+     */
+    public void checkSaveSlots(){
+        
+        int[] save1 = load.readFile("src\\data\\Slot1.txt");
+        int[] save2 = load.readFile("src\\data\\Slot2.txt");
+        int[] save3 = load.readFile("src\\data\\Slot3.txt");
+        int[] save4 = load.readFile("src\\data\\Slot4.txt");
+        if (save1[4] != 0){
+            save1Dat = 1;
+        }
+        if (save2[4] != 0){
+            save2Dat = 1;
+        }
+        if (save3[4] != 0){
+            save3Dat = 1;
+        }
+        if (save4[4] != 0){
+            save4Dat = 1;
+        }
+        
+    }
     
-    
+    /**
+     * Pre: N/A
+     * Post: Advances progress in game by loading the next text boxes
+     */
     public void advance(){
         
         cardNum++;
@@ -1407,6 +1414,14 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel DatLabel;
     private javax.swing.JLabel DataTitle;
     private javax.swing.JLabel ExitLabel;
+    private javax.swing.JLabel Ins1;
+    private javax.swing.JLabel Ins2;
+    private javax.swing.JLabel Ins3;
+    private javax.swing.JLabel Ins4;
+    private javax.swing.JLabel Ins5;
+    private javax.swing.JLabel Ins6;
+    private javax.swing.JLabel Ins7;
+    private javax.swing.JLabel Ins8;
     private javax.swing.JLabel NGLabel;
     private javax.swing.JLabel TitleLabel;
     private javax.swing.JLabel ToMenuLabel;
@@ -1415,6 +1430,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel datBox2;
     private javax.swing.JLabel datBox3;
     private javax.swing.JLabel datBox4;
+    private javax.swing.JLabel datImg1;
+    private javax.swing.JLabel datImg2;
+    private javax.swing.JLabel datImg3;
+    private javax.swing.JLabel datImg4;
     private javax.swing.JLabel gTBoxLeft;
     private javax.swing.JLabel gTBoxMM;
     private javax.swing.JLabel gTBoxMid;

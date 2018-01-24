@@ -35,7 +35,7 @@ public class Write {
 			writeFile.write(String.valueOf(cN));
 			writeFile.close();
 			out.close();
-			System.out.println("Data saved!");
+			//System.out.println("Data saved!");
 		} catch (IOException e) {
 			System.out.println("IOException error");
 			System.out.println("IOException : " + e.getMessage());
