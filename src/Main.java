@@ -71,7 +71,7 @@ public class Main extends javax.swing.JFrame {
                     "An enemy army has approached your castle and are offering us a giant wooden horse. Should we accept?",
                     "Your Highness, a hunting squad has captured a ferocious beast. What would you like to do with it?",
                     "Your Highness, you should not wear clothes that revealing.",
-                    "The church has requested that you send tribute to the them to prove your loyalty to God.",
+                    "The church has requested that you send tribute to them to prove your loyalty to God.",
                     "Your Majesty, I have brought you a frog to celebrate your birthday.",
                     "Your Majesty, some of your soldiers stole my sheep! Will you not show them justice?",
                     "My Queen, a bunch of dangerous wild animals have moved into the villages!",
