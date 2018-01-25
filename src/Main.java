@@ -81,7 +81,7 @@ public class Main extends javax.swing.JFrame {
                     "Your Highness, a man who was caught with suspicous blueprints of the palace is claiming that he thought they were art. Is he guilty?",
                     "People have mentioned that they find some of your language offensive.",
                     "The army is so costly. Why not decrease patrols to save money?",
-                    "The church is planning the festival of the Gods is requesting money and land from you. What say you?",
+                    "The church is planning the festival of the Gods and is requesting money and land from you. What say you?",
                     "A neighbouring kingdom has sent an army to our castle demanding gold in exchange for peace. What shall we do?",
                     "A gigantic rock has crashed near our castle, and the church is claiming that it's a sign from God that we must change and beg for mercy.",
                     "Your Highness, the farmers are having trouble keeping some of the more dangerous animals out of their fields, how can we help them?",
