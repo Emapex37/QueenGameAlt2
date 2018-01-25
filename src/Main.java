@@ -85,7 +85,7 @@ public class Main extends javax.swing.JFrame {
                     "A neighbouring kingdom has sent an army to our castle demanding gold in exchange for peace. What shall we do?",
                     "A gigantic rock has crashed near our castle, and the church is claiming that it's a sign from God that we must change and beg for mercy.",
                     "Your Highness, the farmers are having trouble keeping some of the more dangerous animals out of their fields, how can we help them?",
-                    "Ending"};
+                    "You reach the end of your life, and die a good ruler. People sing your praises for generations."};
     String[] ans1 = {"Got it",
                     "Increase funding for farmers.",
                     "Leave it be! Do you wish to anger the Gods?",
@@ -115,7 +115,7 @@ public class Main extends javax.swing.JFrame {
                     "THE ONLY OPTION IS WAR!!!",
                     "Begin construction of a temple around the rock.",
                     "Give our farmers basic training in hunting.",
-                    "Ending"};
+                    "-"};
     String[] ans2 = {"Cool",
                     "Who cares?",
                     "Ignore the church, we need those metals.",
@@ -145,7 +145,7 @@ public class Main extends javax.swing.JFrame {
                     "We will see to their requests for now.",
                     "We should mine it for it's minerals.",
                     "Send in some soldiers to keep watch and patrol the area.",
-                    "Ending"};
+                    "-"};
     
     
     
@@ -1372,9 +1372,9 @@ public class Main extends javax.swing.JFrame {
             
         } else if (cardNum >= 30) {
             //You win! Having reached the end of your life you die a good ruler
-            text.setText(convertTM(toYou[30]));
-            op1.setText(convertTM(ans1[30]));
-            op2.setText(convertTM(ans2[30]));
+            text.setText(convertTM(toYou[29]));
+            op1.setText(convertTM(ans1[29]));
+            op2.setText(convertTM(ans2[29]));
             
         } else {
             //Advance
