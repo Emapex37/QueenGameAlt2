@@ -1,16 +1,19 @@
+/**
+ * God Save the Queen, a java recreation of Reigns: Her Majesty
+ * Created by: Evan McQueen, Jordan Klug, and Soleeman Hakimi
+ * 
+ */
 
 //import com.sun.glass.events.KeyEvent;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//Audio
+//import java.io.File;
+//import java.io.FileInputStream;
+//import java.io.InputStream;
+//import javax.swing.JOptionPane;
+//import sun.audio.AudioPlayer;
+//import sun.audio.AudioStream;
 
-/**
- *
- * @author EvMcQ5970
- */
 public class Main extends javax.swing.JFrame {
     
     //Variables
@@ -180,6 +183,8 @@ public class Main extends javax.swing.JFrame {
         stat2Img = new javax.swing.JLabel();
         stat3Img = new javax.swing.JLabel();
         stat4Img = new javax.swing.JLabel();
+        Ins10 = new javax.swing.JLabel();
+        Ins9 = new javax.swing.JLabel();
         Ins8 = new javax.swing.JLabel();
         Ins7 = new javax.swing.JLabel();
         Ins6 = new javax.swing.JLabel();
@@ -355,6 +360,18 @@ public class Main extends javax.swing.JFrame {
         stat4Img.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/QueenDollar.png"))); // NOI18N
         getContentPane().add(stat4Img);
         stat4Img.setBounds(700, 30, 50, 80);
+
+        Ins10.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins10.setForeground(new java.awt.Color(202, 239, 242));
+        Ins10.setText("will affect, and make the best choice.");
+        getContentPane().add(Ins10);
+        Ins10.setBounds(20, 340, 240, 40);
+
+        Ins9.setFont(new java.awt.Font("Pristina", 0, 20)); // NOI18N
+        Ins9.setForeground(new java.awt.Color(202, 239, 242));
+        Ins9.setText("Try to guess what stats each choice");
+        getContentPane().add(Ins9);
+        Ins9.setBounds(20, 310, 240, 40);
 
         Ins8.setFont(new java.awt.Font("Plantagenet Cherokee", 0, 18)); // NOI18N
         Ins8.setForeground(new java.awt.Color(156, 239, 255));
@@ -657,6 +674,16 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         //System.out.println("Left");
+        Ins1.setVisible(false);
+        Ins2.setVisible(false);
+        Ins3.setVisible(false);
+        Ins4.setVisible(false);
+        Ins5.setVisible(false);
+        Ins6.setVisible(false);
+        Ins7.setVisible(false);
+        Ins8.setVisible(false);
+        Ins9.setVisible(false);
+        Ins10.setVisible(false);
         
         //Assignment      
         assignLeft();
@@ -678,6 +705,16 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         //System.out.println("Right");
+        Ins1.setVisible(false);
+        Ins2.setVisible(false);
+        Ins3.setVisible(false);
+        Ins4.setVisible(false);
+        Ins5.setVisible(false);
+        Ins6.setVisible(false);
+        Ins7.setVisible(false);
+        Ins8.setVisible(false);
+        Ins9.setVisible(false);
+        Ins10.setVisible(false);
         
         //Assignment
         assignRight();
@@ -742,6 +779,16 @@ public class Main extends javax.swing.JFrame {
         datImg2.setVisible(false);
         datImg3.setVisible(false);
         datImg4.setVisible(false);
+        Ins1.setVisible(false);
+        Ins2.setVisible(false);
+        Ins3.setVisible(false);
+        Ins4.setVisible(false);
+        Ins5.setVisible(false);
+        Ins6.setVisible(false);
+        Ins7.setVisible(false);
+        Ins8.setVisible(false);
+        Ins9.setVisible(false);
+        Ins10.setVisible(false);
         
         //Check save slots
         
@@ -752,6 +799,19 @@ public class Main extends javax.swing.JFrame {
         //Queen. The four stats above represent your relationship with the church,
         //how much your subjects like you, the strength of your army, and 
         //the wealth of your kingdom."
+        
+        //Music
+//        InputStream music;
+//        try{ 
+//        music=new FileInputStream(new File("src\\Audio\\QueenBGM.wav"));
+//        
+//        AudioStream audios=new AudioStream(music);
+//        AudioPlayer.player.start(audios);
+//        }
+//        catch(Exception e){
+//       JOptionPane.showMessageDialog(null,e.getLocalizedMessage());
+//        }
+
         
         //System.out.println("Salad\n kills");
         
@@ -883,6 +943,20 @@ public class Main extends javax.swing.JFrame {
         stat2Img.setVisible(true);
         stat3Img.setVisible(true);
         stat4Img.setVisible(true);
+        
+        //Instructions visible if neccessary
+        if (cardNum == 0){
+            Ins1.setVisible(true);
+            Ins2.setVisible(true);
+            Ins3.setVisible(true);
+            Ins4.setVisible(true);
+            Ins5.setVisible(true);
+            Ins6.setVisible(true);
+            Ins7.setVisible(true);
+            Ins8.setVisible(true);
+            Ins9.setVisible(true);
+            Ins10.setVisible(true);
+        }
         
         //Disable other things
         logo.setVisible(false);
@@ -1415,6 +1489,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel DataTitle;
     private javax.swing.JLabel ExitLabel;
     private javax.swing.JLabel Ins1;
+    private javax.swing.JLabel Ins10;
     private javax.swing.JLabel Ins2;
     private javax.swing.JLabel Ins3;
     private javax.swing.JLabel Ins4;
@@ -1422,6 +1497,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel Ins6;
     private javax.swing.JLabel Ins7;
     private javax.swing.JLabel Ins8;
+    private javax.swing.JLabel Ins9;
     private javax.swing.JLabel NGLabel;
     private javax.swing.JLabel TitleLabel;
     private javax.swing.JLabel ToMenuLabel;
